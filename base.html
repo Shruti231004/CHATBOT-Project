@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<center>
+        <br><br>
+    <H1 style="color: rgb(15, 3, 55);background-color: rgba(195, 220, 34, 0.166); ">VIDYAVARDHINI'S COLLEGE OF ENGINEERING & TECHNOLOGY, VASAI ROAD
+        <br>विद्यावर्धिनीचे अभियांत्रिकी आणि तंत्रज्ञान महाविद्यालय, वसई रोड<br> </H1><br>
+     <h2 style="color: rgb(15, 3, 55);background-color: rgba(195, 220, 34, 0.166); " >  (Approved by AICTE, DTE Maharashtra and Affiliated to University of Mumbai)<br>
+        NBA & NAAC Accredited<br></h2>
+   <br><br>
+
+    <H1 style="color: rgb(15, 3, 55) ;background-color: rgba(195, 220, 34, 0.166); ">Admission Enquiry Portal</H1><br><br>
+</center>
+<h3 style="color: rgb(15, 3, 55) ;background-color: rgba(147, 167, 17, 0.256);" >To provide technologically inspiring environment for learning. 
+    Vidyavardhini means a Body committed to enhancement of Knowledge.<br>
+    The Vidyavardhini's College of Engineering and Technology, is an engineering college in Vasai-Virar.
+    <br> Type =	Engineering College <br>
+    Established	= 1994 [1] <br>
+    Location = Mumbai <br>
+    Campus = Urban, 12.27 acres <br>
+</h3>
+
+   
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="http://avc.ac.in/wp-content/uploads/2022/04/Layer-734.png" width="70" height="70" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h2 class="chatbox__heading--header">ChatBot Support</h2>
+                    <p class="chatbox__description--header">Hi , I am VCET CHATBOT . How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Ask your queries....">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
